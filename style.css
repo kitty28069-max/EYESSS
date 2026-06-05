@@ -1,9 +1,11 @@
-/* 讓內容有間距，頁面自然變長 */
-.hero-section { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 50px; }
-.hero-section img { width: 100%; border-radius: 10px; }
-.core-section { display: flex; gap: 20px; margin: 40px 0; }
-.core-section img { width: 45%; border-radius: 15px; }
-
-/* 確保容器有足夠的 Padding */
-.container { padding: 50px 20px; }
-h1, h2 { border-left: 5px solid #e8a8c4; padding-left: 15px; margin: 40px 0; }
+body { background-color: #fffaf0; font-family: 'Helvetica Neue', sans-serif; margin: 0; color: #444; }
+nav { position: sticky; top: 0; display: flex; justify-content: center; gap: 20px; padding: 20px; background: rgba(255, 255, 255, 0.9); z-index: 100; }
+.nav-btn { background: #f8cdda; color: white; border: none; padding: 10px 25px; border-radius: 25px; cursor: pointer; transition: 0.3s; }
+.nav-btn:hover { background: #d1b3e8; }
+.container { max-width: 900px; margin: auto; padding: 40px 20px; }
+.hero-section { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 60px; }
+.hero-section img { width: 100%; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+.card { background: white; padding: 20px; border-radius: 20px; border: 1px solid #f8cdda; }
+.card img { width: 100%; border-radius: 15px; margin-bottom: 10px; }
+.analysis-text { line-height: 1.8; font-size: 1.1em; background: white; padding: 30px; border-radius: 20px; margin-top: 30px; }
