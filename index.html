@@ -2,13 +2,7 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>Soft Lens - 首頁</title>
-    <style>
-        body { background-color: #fff5f7; font-family: sans-serif; text-align: center; color: #555; }
-        nav { padding: 20px; }
-        .nav-btn { margin: 0 10px; padding: 10px 20px; border-radius: 20px; border: none; background: #e8a8c4; color: white; cursor: pointer; }
-        .hero { padding: 50px; background: #fdfaf7; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
@@ -16,9 +10,18 @@
         <button class="nav-btn" onclick="location.href='analysis.html'">品牌分析</button>
         <button class="nav-btn" onclick="location.href='booking.html'">預約試戴</button>
     </nav>
-    <div class="hero">
-        <h1>Welcome to Soft Lens</h1>
-        <p>探索最適合您的粉嫩舒適隱眼</p>
+
+    <div class="container">
+        <h1>精選隱眼系列</h1>
+        <div class="product-grid">
+            <article class="card">
+                <img src="https://lensasia.tw/wp-content/uploads/2026/03/Olens_Realish_Gray_Monthly_m2-600x749.webp" alt="產品">
+                <span class="food-tag">熱銷款</span>
+                <h3>Realish Gray</h3>
+                <p>Olens 灰色系列，自然混血感。</p>
+            </article>
+            </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
