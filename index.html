@@ -2,51 +2,48 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Lens Collection | 粉嫩隱眼分析</title>
     <style>
-        body { display: flex; font-family: sans-serif; background-color: #fdfaf7; margin: 0; }
-        /* 左側選單 */
-        .sidebar { width: 300px; padding: 20px; border-right: 1px solid #ddd; height: 100vh; overflow-y: auto; }
-        .product-item { background: white; padding: 15px; margin-bottom: 10px; border-radius: 10px; cursor: pointer; border: 1px solid #eee; }
+        :root { --main-pink: #f8cdda; --cream: #fdfaf7; --soft-purple: #d1b3e8; }
+        body { font-family: 'PingFang TC', sans-serif; background-color: var(--cream); margin: 0; color: #555; }
         
-        /* 中間主要展示區 */
-        .main-stage { flex-grow: 1; display: flex; align-items: center; justify-content: center; background: #fff5f5; }
+        /* 導航按鈕 */
+        nav { display: flex; justify-content: center; gap: 20px; padding: 20px; background: white; }
+        .nav-btn { padding: 10px 20px; border: none; border-radius: 20px; background: var(--main-pink); cursor: pointer; }
+
+        /* 手機響應式格狀佈局 */
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
         
-        /* 右側資訊區 */
-        .details { width: 350px; padding: 20px; border-left: 1px solid #ddd; }
-        .form-box { background: white; padding: 20px; border-radius: 10px; margin-top: 20px; }
-        input { width: 100%; margin-bottom: 10px; padding: 8px; }
+        /* 卡片設計 */
+        .card { background: white; padding: 15px; border-radius: 20px; border: 2px solid var(--main-pink); }
+        .card img { width: 100%; border-radius: 15px; }
+        
+        /* 手機板優化 */
+        @media (max-width: 600px) { .nav-btn { font-size: 0.8em; } }
     </style>
 </head>
 <body>
 
-<aside class="sidebar">
-    <h2>項目選擇</h2>
-    <div class="product-item"><h3>Realish Gray</h3><p>Olens 灰色系列</p></div>
-    <div class="product-item"><h3>星鑽系列</h3><p>清晰自然風</p></div>
-    <div class="product-item"><h3>韓系棕色</h3><p>深邃明亮感</p></div>
-    <div class="product-item"><h3>質感系列</h3><p>獨特紋理</p></div>
-    <div class="product-item"><h3>柔美系列</h3><p>約會必備</p></div>
-    <div class="product-item"><h3>夢幻色彩</h3><p>派對焦點</p></div>
-    <div class="product-item"><h3>精品美瞳</h3><p>高級感設計</p></div>
-</aside>
+<nav>
+    <button class="nav-btn" onclick="location.href='index.html'">首頁</button>
+    <button class="nav-btn" onclick="location.href='analysis.html'">品牌分析</button>
+    <button class="nav-btn" onclick="location.href='booking.html'">預約試戴</button>
+</nav>
 
-<main class="main-stage">
-    <div style="background: white; padding: 40px; border-radius: 20px;">
-        <img src="https://lensasia.tw/wp-content/uploads/2026/03/Olens_Realish_Gray_Monthly_m2-600x749.webp" width="300">
-        <p>Venus Brown Lens Case</p>
-    </div>
-</main>
-
-<section class="details">
-    <h1>VENUS</h1>
-    <p>BROWN-GLAMOUR</p>
-    <div class="form-box">
-        <h3>預約表單</h3>
-        <input type="text" placeholder="姓名">
-        <input type="text" placeholder="電話">
-        <button style="width:100%; background:pink; border:none; padding:10px;">預約試戴</button>
-    </div>
-</section>
+<div class="container">
+    <h1>台日韓隱眼嚴選</h1>
+    <div class="grid">
+        <article class="card">
+            <img src="project-1.png" alt="隱眼">
+            <h3>品牌名稱 (日系)</h3>
+            <p><strong>直徑:</strong> 14.1mm | <strong>舒適度:</strong> ⭐⭐⭐⭐⭐</p>
+            <p>適合族群：上班族、氣質溫柔風</p>
+            <button style="width:100%; background:var(--soft-purple); border:none; padding:10px; border-radius:10px;">查看詳情</button>
+        </article>
+        </div>
+</div>
 
 </body>
 </html>
