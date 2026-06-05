@@ -3,205 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隱眼品牌彩色分析介紹 - 單頁網站</title>
+    <title> Venus Brown 美瞳專賣 - 訂製您的專屬眼神</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- 頂部導覽列按鈕區 -->
+<!-- 頂部導覽列 -->
 <nav class="nav-bar">
-    <div class="nav-container">
-        <a href="#olens" class="nav-btn nav-active">OLENS (韓國)</a>
-        <a href="#revia" class="nav-btn">REVIA (日本)</a>
-        <!-- 您可以在此繼續加入其他品牌按鈕 -->
+    <div class="nav-logo">
+        <img src="logo.png" alt="Venus Brown Logo" class="logo-img">
+    </div>
+    <div class="nav-buttons">
+        <button class="menu-btn">選單</button>
+        <button class="more-btn">更多隱眼</button>
     </div>
 </nav>
 
-<!-- 網頁主要內容區 -->
-<main class="main-content">
-
-    <!-- OLENS 品牌卡片區 -->
-    <section id="olens" class="brand-card olens-card">
-        <header class="card-header">
-            <img src="logo-olens.png" alt="OLENS Logo" class="brand-logo">
-            <h1 class="brand-name">OLENS (韓國)</h1>
-            <p class="brand-intro">韓國第一流行隱眼，以其細緻、設計感強的顯色設計聞名，是韓星愛用款。</p>
-        </header>
-        
-        <div class="card-body">
-            <!-- 模特戴照與分類 -->
-            <div class="model-section">
-                <div class="model-item">
-                    <img src="olens-model-hazel.png" alt="OLENS Hazel" class="model-photo">
-                    <span class="color-tag color-hazel">Hazel</span>
-                    <span class="lens-name">Eyelighter Glowy Hazel</span>
+<!-- 主要內容區 -->
+<main class="main-container">
+    
+    <!-- 左側：擴展的項目選擇區 -->
+    <aside class="product-selection">
+        <div class="section-title">項目選擇</div>
+        <div class="product-grid">
+            <!-- 項目 1 (基於 image_43.png) -->
+            <div class="selection-box active" data-product="venus-brown">
+                <div class="selection-icons">
+                    <span class="icon eye-icon"></span>
+                    <span class="icon water-icon"></span>
                 </div>
-                <div class="model-item">
-                    <img src="olens-model-gray.png" alt="OLENS Gray" class="model-photo">
-                    <span class="color-tag color-gray">Gray</span>
-                    <span class="lens-name">French Shine Gray</span>
+                <div class="selection-dots">
+                    <span class="dot brown-dot"></span>
+                    <span class="dot peach-dot"></span>
                 </div>
-                <div class="model-item">
-                    <img src="olens-model-olive.png" alt="OLENS Olive" class="model-photo">
-                    <span class="color-tag color-olive">Olive</span>
-                    <span class="lens-name">Spanish Circle Olive</span>
-                </div>
-                <!-- 按鈕切換模特 (手機版 RWD 用，此處簡化未實作功能) -->
-                <!-- <div class="model-nav">...</div> -->
+                <p>棕色系，極度自然</p>
+                <p>就像裸眼般的舒適感</p>
             </div>
 
-            <!-- 規格列表與分析 -->
-            <div class="info-section">
-                <div class="specs-list">
-                    <div class="spec-item">
-                        <img src="icon-diameter.png" alt="Diameter Icon" class="spec-icon">
-                        <span class="spec-label">大小直徑:</span>
-                        <span class="spec-value">14.0mm / 14.2mm</span>
-                    </div>
-                    <div class="spec-item">
-                        <img src="icon-price.png" alt="Price Icon" class="spec-icon">
-                        <span class="spec-label">價格:</span>
-                        <span class="spec-value">日拋 / 月拋 (各異)</span>
-                    </div>
-                    <div class="spec-item">
-                        <img src="icon-comfort.png" alt="Comfort Icon" class="spec-icon">
- <!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隱眼品牌粉嫩舒適分析介紹 - 單頁網站</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<!-- 頂部導覽列按鈕區 -->
-<nav class="nav-bar">
-    <div class="nav-container">
-        <a href="#brand1" class="nav-btn nav-active">品牌 1 (日系)</a>
-        <a href="#brand2" class="nav-btn">品牌 2 (韓系)</a>
-        <!-- 您可以在此繼續加入其他品牌按鈕 -->
-    </div>
-</nav>
-
-<!-- 網頁主要內容區 -->
-<main class="main-content">
-
-    <!-- 品牌 1 卡片區 -->
-    <section id="brand1" class="brand-card brand1-card">
-        <header class="card-header">
-            <img src="logo-brand1.png" alt="Brand 1 Logo" class="brand-logo">
-            <h1 class="brand-name">品牌 1 (日系溫柔)</h1>
-            <p class="brand-intro">主打日系自然融合度，高品質材質，適合追求日常隱形顯色族群。</p>
-        </header>
-        
-        <div class="card-body">
-            <!-- 模特戴照與分類 -->
-            <div class="model-section">
-                <div class="model-item">
-                    <img src="brand1-model-classic.png" alt="Brand 1 Classic" class="model-photo">
-                    <span class="color-tag color-classic">Classic</span>
-                    <span class="lens-name">經典亮棕 (Classic Brown)</span>
-                </div>
-                <div class="model-item">
-                    <img src="brand1-model-glamorous.png" alt="Brand 1 Glamorous" class="model-photo">
-                    <span class="color-tag color-glamorous">Glamorous</span>
-                    <span class="lens-name">華麗金沙 (Glamorous Gold)</span>
-                </div>
+            <!-- 項目 2-6 (範例) -->
+            <div class="selection-box" data-product="hazel">
+                <div class="selection-icons"><span class="icon eye-icon"></span><span class="icon sun-icon"></span></div>
+                <div class="selection-dots"><span class="dot hazel-dot"></span><span class="dot gold-dot"></span></div>
+                <p>榛果棕，自信陽光</p><p>混血感首選款式</p>
             </div>
-
-            <!-- 規格列表與分析 -->
-            <div class="info-section">
-                <div class="specs-list">
-                    <div class="spec-item">
-                        <img src="icon-diameter.png" alt="Diameter Icon" class="spec-icon">
-                        <span class="spec-label">大小直徑:</span>
-                        <span class="spec-value">14.0mm / 14.2mm</span>
-                    </div>
-                    <div class="spec-item">
-                        <img src="icon-price.png" alt="Price Icon" class="spec-icon">
-                        <span class="spec-label">價格:</span>
-                        <span class="spec-value">NT$ 500 / NT$ 800</span>
-                    </div>
-                    <div class="spec-item">
-                        <img src="icon-comfort.png" alt="Comfort Icon" class="spec-icon">
-                        <span class="spec-label">舒適度:</span>
-                        <span class="spec-value spec-stars">★★★★☆</span>
-                    </div>
-                </div>
-
-                <div class="analysis-box">
-                    <h2>適合族群與分析:</h2>
-                    <p>適合族群：自然融合、不易察覺、重視配戴舒適度者。</p>
-                    <ul class="analysis-list">
-                        <li>極度柔和，完美融合原本虹膜色。</li>
-                        <li>高品質材質，舒適度佳。</li>
-                        <li>設計簡潔，適合各類妝容。</li>
-                    </ul>
-                </div>
+            <div class="selection-box" data-product="gray">
+                <div class="selection-icons"><span class="icon eye-icon"></span><span class="icon cool-icon"></span></div>
+                <div class="selection-dots"><span class="dot gray-dot"></span><span class="dot white-dot"></span></div>
+                <p>灰色系，冷豔個性</p><p>打造時尚俐落眼神</p>
+            </div>
+            <div class="selection-box" data-product="natural">
+                <div class="selection-icons"><span class="icon water-icon"></span></div>
+                <div class="selection-dots"><span class="dot black-dot"></span></div>
+                <p>自然黑，清晰有神</p><p>日常通勤必備款</p>
+            </div>
+            <div class="selection-box" data-product="blue">
+                <div class="selection-icons"><span class="icon eye-icon"></span><span class="icon wave-icon"></span></div>
+                <div class="selection-dots"><span class="dot blue-dot"></span><span class="dot clear-dot"></span></div>
+                <p>海洋藍，水潤清透</p><p>為您的眼神增加水光感</p>
+            </div>
+            <div class="selection-box" data-product="pink">
+                <div class="selection-icons"><span class="icon star-icon"></span></div>
+                <div class="selection-dots"><span class="dot pink-dot"></span><span class="dot lavender-dot"></span></div>
+                <p>粉紫色，溫柔浪漫</p><p>適合約會的甜美選擇</p>
             </div>
         </div>
-    </section>
+    </aside>
 
-    <!-- 品牌 2 卡片區 -->
-    <section id="brand2" class="brand-card brand2-card">
-        <header class="card-header">
-            <img src="logo-brand2.png" alt="Brand 2 Logo" class="brand-logo">
-            <h1 class="brand-name">品牌 2 (韓系顯色)</h1>
-            <p class="brand-intro">以細緻、設計感強的顯色設計聞名，適合追求韓式時尚妝容者。</p>
-        </header>
+    <!-- 中央與右側：詳細資料區 (基於 Venus Brown) -->
+    <article class="product-details">
         
-        <div class="card-body">
-            <!-- 模特戴照與分類 -->
-            <div class="model-section">
-                <div class="model-item">
-                    <img src="brand2-model-natural.png" alt="Brand 2 Natural" class="model-photo">
-                    <span class="color-tag color-natural">Natural</span>
-                    <span class="lens-name">自然深棕 (Natural Brown)</span>
-                </div>
-            </div>
-
-            <!-- 規格列表與分析 -->
-            <div class="info-section">
-                <div class="specs-list">
-                    <div class="spec-item">
-                        <img src="icon-diameter.png" alt="Diameter Icon" class="spec-icon">
-                        <span class="spec-label">大小直徑:</span>
-                        <span class="spec-value">14.1mm / 14.3mm</span>
-                    </div>
-                    <div class="spec-item">
-                        <img src="icon-price.png" alt="Price Icon" class="spec-icon">
-                        <span class="spec-label">價格:</span>
-                        <span class="spec-value">NT$ 450 / NT$ 750</span>
-                    </div>
-                    <div class="spec-item">
-                        <img src="icon-comfort.png" alt="Comfort Icon" class="spec-icon">
-                        <span class="spec-label">舒適度:</span>
-                        <span class="spec-value spec-stars">★★★★★</span>
-                    </div>
-                </div>
-
-                <div class="analysis-box">
-                    <h2>適合族群與分析:</h2>
-                    <p>適合族群：顯色度高、追求眼色多變、韓系潮流妝容者。</p>
-                    <ul class="analysis-list">
-                        <li>設計層次感強，顯色度極佳。</li>
-                        <li>款式多變，滿足不同風格需求。</li>
-                        <li>材質舒適，適合長時間配戴。</li>
-                    </ul>
-                </div>
+        <!-- 中央：隱眼展示 -->
+        <section class="display-base-section">
+            <div class="display-base">
+                <img src="venus-brown.png" alt="Venus Brown Lens Case" class="base-img">
             </div>
         </div>
-    </section>
 
+        <!-- 右側：資料與表單 -->
+        <section class="info-forms-section">
+            <header class="product-header">
+                <h1 class="brand-name">VENUS</h1>
+                <h2 class="model-name">BROWN-GLAMOUR</h2>
+                <div class="params-block">
+                    <div class="param-icons"><span class="icon eye-icon"></span><span class="icon globe-icon"></span></div>
+                    <div class="param-text">1day CIRCLE / DIA 14.1mm, WC 62%</div>
+                </div>
+            </header>
+
+            <!-- 預約表單 -->
+            <form class="appointment-form">
+                <h3 class="form-title">預約表單</h3>
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" placeholder="請輸入姓名">
+                </div>
+                <div class="form-group">
+                    <label for="phone">電話</label>
+                    <input type="tel" id="phone" name="phone" placeholder="請輸入電話">
+                </div>
+                <div class="form-group">
+                    <label for="date">預約日期</label>
+                    <select id="date" name="date">
+                        <option value="" disabled selected>請選擇日期</option>
+                        <option value="today">今天</option>
+                        <option value="tomorrow">明天</option>
+                        <option value="later">其他日期</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">預約試戴</button>
+            </form>
+
+            <!-- 互動按鈕群 -->
+            <div class="interactive-btns">
+                <h3 class="section-subtitle">互動功能</h3>
+                <div class="btn-group">
+                    <button class="action-btn cart-btn">添加到購物車</button>
+                    <button class="action-btn color-switch-btn">切換顏色</button>
+                </div>
+                <div class="btn-group">
+                    <button class="action-btn cart-btn">添加到購物車</button>
+                    <button class="action-btn color-switch-btn">切換顏色</button>
+                </div>
+            </div>
+
+            <!-- 切換效果面板 -->
+            <div class="switch-panel">
+                <h3 class="form-title">切換效果</h3>
+                <div class="switch-options">
+                    <div class="switch-row">
+                        <span>棕色系</span>
+                        <div class="swatches"><span class="swatch brown-dot"></span><span class="swatch peach-dot"></span><span class="swatch gold-dot"></span></div>
+                    </div>
+                    <div class="switch-row">
+                        <span>灰色系</span>
+                        <div class="swatches"><span class="swatch gray-dot"></span><span class="swatch white-dot"></span><span class="swatch cool-gray-dot"></span></div>
+                    </div>
+                    <div class="switch-row">
+                        <span>自然系</span>
+                        <div class="swatches"><span class="swatch black-dot"></span><span class="swatch pure-brown-dot"></span><span class="swatch mocha-dot"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 隱眼本體與裝飾 -->
+            <div class="lens-decor">
+                <img src="venus-lens.png" alt="Venus Brown Lens" class="lens-body-img">
+                <div class="decor-branch">
+                    <img src="branch.png" alt="Botanical Decor" class="decor-img">
+                </div>
+            </div>
+        </section>
+    </article>
 </main>
 
-<script src="script.js"></script> <!-- 用於手機版水平選單滑動功能 -->
+<script src="script.js"></script>
 </body>
 </html>
