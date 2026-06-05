@@ -1,223 +1,62 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venus Brown 美瞳專賣 - 訂製您的專屬眼神</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Premium Contact Lenses Collection</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; background-color: #fdfaf7; color: #444; }
+        header { padding: 40px; text-align: center; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 50px; }
+        .model-img { width: 100%; border-radius: 10px; object-fit: cover; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+        .project-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .project-card img { width: 100%; border-radius: 5px; }
+        footer { text-align: center; padding: 50px; font-size: 0.9em; color: #888; }
+    </style>
 </head>
 <body>
 
-<!-- 頂部導覽列 -->
-<nav class="nav-bar">
-    <div class="nav-logo">
-        <img src="logo.png" alt="Venus Brown Logo" class="logo-img">
+<header>
+    <h1>Our Exclusive Collection</h1>
+</header>
+
+<div class="container">
+    <!-- 模特實戴照展示 -->
+    <div class="hero-grid">
+        <img src="model-1.jpg" class="model-img" alt="Model 1">
+        <img src="model-2.jpg" class="model-img" alt="Model 2">
+        <img src="model-3.jpg" class="model-img" alt="Model 3">
+        <img src="model-4.jpg" class="model-img" alt="Model 4">
     </div>
-    <div class="nav-links">
-        <a href="#home" class="nav-link nav-active">🏠 首頁</a>
-        <div class="dropdown">
-            <a href="#selection" class="nav-link dropdown-btn">🌸 美瞳選購</a>
-            <div class="dropdown-content">
-                <a href="#venus">Venus Brown</a>
-                <a href="#crystal">Crystal Brown</a>
-                <a href="#more">更多隱眼...</a>
-            </div>
+
+    <!-- 核心展示區 -->
+    <section>
+        <h2>The Quality Focus</h2>
+        <div style="display: flex; gap: 20px;">
+            <img src="venus-brown-box.png" style="width: 48%; border-radius: 10px;">
+            <img src="crystal-brown-pattern.png" style="width: 48%; border-radius: 10px;">
         </div>
-        <a href="#gallery" class="nav-link">👩 模特展示</a>
-        <a href="#appointment" class="nav-link">📆 預約試戴</a>
-        <a href="#cart" class="nav-link">🛒 購物車</a>
-        <a href="#login" class="nav-link">👤 登入/註冊</a>
+    </section>
+
+    <!-- 產品清單 -->
+    <h2 style="margin-top: 50px;">Available Series</h2>
+    <div class="product-grid">
+        <!-- 自動化生成 7 個產品卡片 -->
+        <div class="project-card"><img src="project-1.png" alt="Product"></div>
+        <div class="project-card"><img src="project-2.png" alt="Product"></div>
+        <div class="project-card"><img src="project-3.png" alt="Product"></div>
+        <div class="project-card"><img src="project-4.png" alt="Product"></div>
+        <div class="project-card"><img src="project-5.png" alt="Product"></div>
+        <div class="project-card"><img src="project-6.png" alt="Product"></div>
+        <div class="project-card"><img src="project-7.png" alt="Product"></div>
     </div>
-</nav>
+</div>
 
-<!-- 主要內容區 -->
-<main class="main-container">
-    
-    <!-- 左側：項目選擇與互動 -->
-    <aside class="project-selection">
-        <div class="section-title">項目選擇與互動</div>
-        <div class="project-grid">
-            <!-- 項目 1-8 (範例) -->
-            <div class="selection-box active" data-product="venus-brown">
-                <img src="project-1-thumb.png" alt="Venus Brown Thumb" class="project-thumb">
-                <div class="selection-icons"><span class="icon eye-icon"></span><span class="icon water-icon"></span></div>
-                <div class="selection-dots"><span class="dot brown-dot"></span><span class="dot peach-dot"></span><span class="dot gold-dot"></span></div>
-                <p>棕色系，極度自然</p><p>就像裸眼般的舒適感</p>
-            </div>
-            <div class="selection-box" data-product="hazel">
-                <img src="project-2-thumb.png" alt="Hazel Thumb" class="project-thumb">
-                <div class="selection-icons"><span class="icon sun-icon"></span><span class="icon eye-icon"></span></div>
-                <div class="selection-dots"><span class="dot hazel-dot"></span><span class="dot sun-gold-dot"></span></div>
-                <p>榛果棕，自信陽光</p><p>混血感首選款式</p>
-            </div>
-            <div class="selection-box" data-product="gray">
-                <img src="project-3-thumb.png" alt="Gray Thumb" class="project-thumb">
-                <div class="selection-icons"><span class="icon cool-icon"></span><span class="icon eye-icon"></span></div>
-                <div class="selection-dots"><span class="dot gray-dot"></span><span class="dot white-dot"></span></div>
-                <p>灰色系，冷豔個性</p><p>打造時尚俐落眼神</p>
-            </div>
-            <div class="selection-box" data-product="natural">
-                <img src="project-4-thumb.png" alt="Natural Thumb" class="project-thumb">
-                <div class="selection-icons"><span class="icon eye-icon"></span></div>
-                <div class="selection-dots"><span class="dot black-dot"></span></div>
-                <p>自然黑，清晰有神</p><p>日常通勤必備款</p>
-            </div>
-            <div class="selection-box" data-product="blue">
-                <img src="project-5-thumb.png" alt="Blue Thumb" class="project-thumb">
-                <div class="selection-icons"><span class="icon eye-icon"></span><span class="icon water-icon"></span></div>
-                <div class="selection-dots"><span class="dot blue-dot"></span><span class="dot clear-dot"></span></div>
-                <p>海洋藍，水潤清透</p><p>為您的眼神增加水光感</p>
-            </div>
-            <div class="selection-box" data-product="pink">
-                <img src="project-6-thumb.png" alt="Pink Thumb" class="project-thumb">
-                <div class="selection-icons"><span class="icon eye-icon"></span><span class="icon star-icon"></span></div>
-                <div class="selection-dots"><span class="dot pink-dot"></span><span class="dot lavender-dot"></span></div>
-                <p>粉紫色，溫柔浪漫</p><p>適合約會的甜美選擇</p>
-            </div>
-            <div class="selection-box" data-product="lavender">
-                <img src="project-7-thumb.png" alt="Lavender Thumb" class="project-thumb">
-                <div class="selection-icons"><span class="icon star-icon"></span></div>
-                <div class="selection-dots"><span class="dot lavender-dot"></span></div>
-                <p>薰衣草紫，迷幻夢幻</p><p>展現獨特的神秘魅力</p>
-            </div>
-            <div class="selection-box" data-product="clear">
-                <img src="project-8-thumb.png" alt="Clear Thumb" class="project-thumb">
-                <div class="selection-icons"><span class="icon eye-icon"></span><span class="icon globe-icon"></span></div>
-                <div class="selection-dots"><span class="dot white-dot"></span></div>
-                <p>純淨透，清晰無感</p><p>適合裸妝感的日常需求</p>
-            </div>
-        </div>
-    </aside>
+<footer>
+    <p>&copy; 2026 Premium Lens Collection. Designed with passion.</p>
+</footer>
 
-    <!-- 中央：展示與詳細參數 -->
-    <article class="product-details">
-        
-        <!-- 中央：隱眼展示 -->
-        <section class="display-section">
-            <div class="display-container">
-                <div class="box-stack">
-                    <img src="venus-brown-box.png" alt="Venus Brown Case" class="base-box box-top active">
-                    <div class="box-title">VENUS BROWN<br>“T乾幹隱眼“</div>
-                </div>
-                <div class="box-stack box-right">
-                    <div class="box-inner">
-                        <img src="crystal-brown-pattern.png" alt="Crystal Brown Pattern" class="box-img">
-                        <div class="inner-icons"><span class="icon eye-icon"></span><span class="icon water-icon"></span></div>
-                        <div class="inner-dots"><span class="dot brown-dot"></span><span class="dot peach-dot"></span><span class="dot gold-dot"></span></div>
-                        <p>棕色系，極度自然</p><p>就像裸眼般的舒適感</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 切換按鈕與詳細參數圖 -->
-            <div class="params-block">
-                <div class="product-header">
-                    <h1 class="brand-name">VENUS</h1>
-                    <h2 class="model-name">BROWN-GLAMOUR</h2>
-                </div>
-                <div class="param-icons"><span class="icon eye-icon"></span><span class="icon globe-icon"></span></div>
-                <div class="param-text">1day CIRCLE / DIA 14.1mm, WC 62%</div>
-            </div>
-        </section>
-
-        <!-- 右側：詳細參數與表單 -->
-        <section class="info-forms-section">
-            <header class="forms-header">
-                <h3 class="section-title">詳細參數</h3>
-            </header>
-
-            <!-- 預約表單 -->
-            <form class="appointment-form">
-                <h3 class="form-title">預約表單</h3>
-                <div class="form-group">
-                    <label for="name">姓名</label>
-                    <input type="text" id="name" name="name" placeholder="請輸入姓名">
-                </div>
-                <div class="form-group">
-                    <label for="phone">電話</label>
-                    <input type="tel" id="phone" name="phone" placeholder="請輸入電話">
-                </div>
-                <div class="form-group">
-                    <label for="date">預約日期</label>
-                    <select id="date" name="date">
-                        <option value="" disabled selected>請選擇日期</option>
-                        <option value="today">今天</option>
-                        <option value="tomorrow">明天</option>
-                        <option value="later">其他日期</option>
-                    </select>
-                </div>
-                <button type="submit" class="submit-btn">預約試戴</button>
-            </form>
-
-            <!-- 互動按鈕群 -->
-            <div class="interactive-btns">
-                <h3 class="section-subtitle">互動按鈕</h3>
-                <div class="btn-group">
-                    <button class="action-btn cart-btn">添加到購物車</button>
-                    <button class="action-btn color-switch-btn">切換顏色</button>
-                </div>
-                <div class="btn-group">
-                    <button class="action-btn cart-btn">添加到購物車</button>
-                    <button class="action-btn color-switch-btn">切換顏色</button>
-                </div>
-            </div>
-
-            <!-- 切換效果面板 -->
-            <div class="switch-panel">
-                <h3 class="form-title">切換效果</h3>
-                <div class="switch-options">
-                    <div class="switch-row">
-                        <span>棕色系</span>
-                        <div class="swatches"><span class="swatch brown-dot"></span><span class="swatch peach-dot"></span><span class="swatch gold-dot"></span></div>
-                    </div>
-                    <div class="switch-row">
-                        <span>灰色系</span>
-                        <div class="swatches"><span class="swatch gray-dot"></span><span class="swatch white-dot"></span><span class="swatch cool-gray-dot"></span></div>
-                    </div>
-                    <div class="switch-row">
-                        <span>自然系</span>
-                        <div class="swatches"><span class="swatch black-dot"></span><span class="swatch pure-brown-dot"></span><span class="swatch mocha-dot"></span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 隱眼本體與裝飾 -->
-            <div class="lens-decor">
-                <img src="venus-lens.png" alt="Venus Brown Lens" class="lens-body-img">
-                <div class="decor-branch">
-                    <img src="branch.png" alt="Botanical Decor" class="decor-img">
-                </div>
-            </div>
-        </section>
-    </article>
-
-    <!-- 右側：模特展示畫廊 -->
-    <aside class="model-gallery">
-        <h3 class="gallery-title">MODEL GALLERY</h3>
-        <div class="model-grid">
-            <div class="model-item">
-                <img src="hydron-model.jpg" alt="HYDRON Model" class="model-photo">
-                <p class="model-brand">HYDRON MODEL</p>
-            </div>
-            <div class="model-item">
-                <img src="lens-town-model.jpg" alt="LENS TOWN Model" class="model-photo">
-                <p class="model-brand">LENS TOWN MODEL</p>
-            </div>
-            <div class="model-item">
-                <img src="topards-model.jpg" alt="TOPARDS Model" class="model-photo">
-                <p class="model-brand">TOPARDS MODEL</p>
-            </div>
-            <div class="model-item">
-                <img src="molak-model.jpg" alt="MOLAK Model" class="model-photo">
-                <p class="model-brand">MOLAK MODEL</p>
-            </div>
-        </div>
-    </aside>
-</main>
-
-<script src="script.js"></script>
 </body>
 </html>
