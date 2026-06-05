@@ -2,48 +2,23 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soft Lens Collection | 粉嫩隱眼分析</title>
+    <title>Soft Lens - 首頁</title>
     <style>
-        :root { --main-pink: #f8cdda; --cream: #fdfaf7; --soft-purple: #d1b3e8; }
-        body { font-family: 'PingFang TC', sans-serif; background-color: var(--cream); margin: 0; color: #555; }
-        
-        /* 導航按鈕 */
-        nav { display: flex; justify-content: center; gap: 20px; padding: 20px; background: white; }
-        .nav-btn { padding: 10px 20px; border: none; border-radius: 20px; background: var(--main-pink); cursor: pointer; }
-
-        /* 手機響應式格狀佈局 */
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        
-        /* 卡片設計 */
-        .card { background: white; padding: 15px; border-radius: 20px; border: 2px solid var(--main-pink); }
-        .card img { width: 100%; border-radius: 15px; }
-        
-        /* 手機板優化 */
-        @media (max-width: 600px) { .nav-btn { font-size: 0.8em; } }
+        body { background-color: #fff5f7; font-family: sans-serif; text-align: center; color: #555; }
+        nav { padding: 20px; }
+        .nav-btn { margin: 0 10px; padding: 10px 20px; border-radius: 20px; border: none; background: #e8a8c4; color: white; cursor: pointer; }
+        .hero { padding: 50px; background: #fdfaf7; }
     </style>
 </head>
 <body>
-
-<nav>
-    <button class="nav-btn" onclick="location.href='index.html'">首頁</button>
-    <button class="nav-btn" onclick="location.href='analysis.html'">品牌分析</button>
-    <button class="nav-btn" onclick="location.href='booking.html'">預約試戴</button>
-</nav>
-
-<div class="container">
-    <h1>台日韓隱眼嚴選</h1>
-    <div class="grid">
-        <article class="card">
-            <img src="project-1.png" alt="隱眼">
-            <h3>品牌名稱 (日系)</h3>
-            <p><strong>直徑:</strong> 14.1mm | <strong>舒適度:</strong> ⭐⭐⭐⭐⭐</p>
-            <p>適合族群：上班族、氣質溫柔風</p>
-            <button style="width:100%; background:var(--soft-purple); border:none; padding:10px; border-radius:10px;">查看詳情</button>
-        </article>
-        </div>
-</div>
-
+    <nav>
+        <button class="nav-btn" onclick="location.href='index.html'">首頁</button>
+        <button class="nav-btn" onclick="location.href='analysis.html'">品牌分析</button>
+        <button class="nav-btn" onclick="location.href='booking.html'">預約試戴</button>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to Soft Lens</h1>
+        <p>探索最適合您的粉嫩舒適隱眼</p>
+    </div>
 </body>
 </html>
