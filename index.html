@@ -2,66 +2,88 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Contact Lenses Collection</title>
+    <title>Premium Collection</title>
     <style>
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; background-color: #fdfaf7; color: #444; line-height: 1.6; }
-        header { padding: 40px; text-align: center; }
-        .logo-img { max-width: 200px; height: auto; margin-bottom: 20px; }
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
-        .hero-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 50px; }
-        .model-img { width: 100%; border-radius: 10px; object-fit: cover; aspect-ratio: 4/3; }
-        .core-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 50px; }
-        .core-img { width: 100%; border-radius: 10px; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
-        .project-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
-        .project-card:hover { transform: translateY(-5px); }
-        .project-card img { width: 100%; border-radius: 5px; }
-        footer { text-align: center; padding: 50px; font-size: 0.9em; color: #888; }
+        body { font-family: sans-serif; background-color: #fdfaf7; padding: 20px; }
+        .container { max-width: 1000px; margin: auto; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+        .food-card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .food-img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
+        .food-tag { background: #eee; padding: 2px 8px; border-radius: 4px; font-size: 0.75em; color: #666; }
+        h3 { margin: 10px 0; font-size: 1.1em; }
+        p { font-size: 0.9em; color: #777; }
     </style>
 </head>
 <body>
 
-<header>
-    <!-- 已修正：加入 Logo -->
-    <img src="logo.png" alt="Brand Logo" class="logo-img">
-    <h1>Our Exclusive Collection</h1>
-</header>
-
 <div class="container">
-    <!-- 模特實戴照展示 -->
-    <div class="hero-grid">
-        <img src="model-1.jpg" class="model-img" alt="Model 1">
-        <img src="model-2.jpg" class="model-img" alt="Model 2">
-        <img src="model-3.jpg" class="model-img" alt="Model 3">
-        <img src="model-4.jpg" class="model-img" alt="Model 4">
-    </div>
-
-    <!-- 核心展示區 -->
-    <section>
-        <h2 style="text-align: center; margin-bottom: 30px;">The Quality Focus</h2>
-        <div class="core-grid">
-            <img src="venus-brown-box.png" class="core-img" alt="Product Box">
-            <img src="crystal-brown-pattern.png" class="core-img" alt="Pattern Detail">
-        </div>
-    </section>
-
-    <!-- 產品清單 -->
-    <h2 style="margin-top: 50px; text-align: center;">Available Series</h2>
     <div class="product-grid">
-        <div class="project-card"><img src="project-1.png" alt="Product"></div>
-        <div class="project-card"><img src="project-2.png" alt="Product"></div>
-        <div class="project-card"><img src="project-3.png" alt="Product"></div>
-        <div class="project-card"><img src="project-4.png" alt="Product"></div>
-        <div class="project-card"><img src="project-5.png" alt="Product"></div>
-        <div class="project-card"><img src="project-6.png" alt="Product"></div>
-        <div class="project-card"><img src="project-7.png" alt="Product"></div>
+        
+        <article class="food-card">
+            <img src="https://lensasia.tw/wp-content/uploads/2026/03/Olens_Realish_Gray_Monthly_m2-600x749.webp" class="food-img">
+            <div class="food-info">
+                <span class="food-tag">經典款</span>
+                <h3>Realish Gray</h3>
+                <p>Olens 熱門灰色系列，打造自然混血感。</p>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <img src="https://asiastar.com.tw/assets/front/AN/img/item/20231204164643108.jpg" class="food-img">
+            <div class="food-info">
+                <span class="food-tag">熱銷款</span>
+                <h3>星鑽系列</h3>
+                <p>清晰自然，日常工作配戴的最佳選擇。</p>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <img src="https://shoplineimg.com/61d24dc07e53e60016088e54/63eddc51812bce0011c4e26f/800x.jpg" class="food-img">
+            <div class="food-info">
+                <span class="food-tag">人氣款</span>
+                <h3>韓系棕色</h3>
+                <p>深邃眼神，讓您的雙眸更加明亮有神。</p>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa-S2Y8QEfK02NH-CJsDK09UZslDjT59Nuuw&s" class="food-img">
+            <div class="food-info">
+                <span class="food-tag">時尚款</span>
+                <h3>質感系列</h3>
+                <p>獨特紋理設計，展現您的個人風格。</p>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIIjr1zk0yISqCjwdRDV075e5drdZbRS-UsQ&s" class="food-img">
+            <div class="food-info">
+                <span class="food-tag">推薦款</span>
+                <h3>柔美系列</h3>
+                <p>色調柔和，適合約會或正式場合。</p>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZWe1cJNpGJg9bp7nH_B_mOL_54oJATkdiVg&s" class="food-img">
+            <div class="food-info">
+                <span class="food-tag">特別款</span>
+                <h3>夢幻色彩</h3>
+                <p>閃耀迷人，專為派對時刻設計。</p>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <img src="https://i.marieclaire.com.tw/assets/mc/202008/5F463BF37D4051598438387.jpeg" class="food-img">
+            <div class="food-info">
+                <span class="food-tag">限量款</span>
+                <h3>精品美瞳</h3>
+                <p>高級感設計，讓眼神與眾不同。</p>
+            </div>
+        </article>
+
     </div>
 </div>
-
-<footer>
-    <p>&copy; 2026 Premium Lens Collection. All Rights Reserved.</p>
-</footer>
 
 </body>
 </html>
