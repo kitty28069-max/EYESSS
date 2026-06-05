@@ -2,23 +2,42 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>Premium Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Contact Lenses Collection</title>
     <style>
-        body { font-family: sans-serif; background-color: #fdfaf7; padding: 20px; }
-        .container { max-width: 1000px; margin: auto; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; background-color: #fdfaf7; color: #444; line-height: 1.6; }
+        header { padding: 40px; text-align: center; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        
+        /* 模特展示與核心區塊 */
+        .hero-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 50px; }
+        .hero-img { width: 100%; border-radius: 10px; object-fit: cover; aspect-ratio: 4/3; }
+        
+        /* 產品卡片樣式 */
         .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
-        .food-card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .food-img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
-        .food-tag { background: #eee; padding: 2px 8px; border-radius: 4px; font-size: 0.75em; color: #666; }
-        h3 { margin: 10px 0; font-size: 1.1em; }
+        .food-card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .food-card:hover { transform: translateY(-5px); }
+        .food-img { width: 100%; border-radius: 8px; margin-bottom: 15px; aspect-ratio: 1/1; object-fit: cover; }
+        .food-tag { background: #eee; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; color: #666; }
+        h3 { margin: 10px 0; font-size: 1.2em; }
         p { font-size: 0.9em; color: #777; }
+        footer { text-align: center; padding: 50px; font-size: 0.9em; color: #888; }
     </style>
 </head>
 <body>
 
+<header>
+    <h1>Premium Contact Lenses Collection</h1>
+</header>
+
 <div class="container">
+    <div class="hero-grid">
+        <img src="https://images.unsplash.com/photo-1544376798-89aa6b82c6cd?auto=format&fit=crop&w=600" class="hero-img" alt="Model">
+        <img src="https://images.unsplash.com/photo-1512484776492-a0d2f8e8c899?auto=format&fit=crop&w=600" class="hero-img" alt="Model">
+    </div>
+
+    <h2 style="text-align: center; margin-bottom: 30px;">Available Series</h2>
     <div class="product-grid">
-        
         <article class="food-card">
             <img src="https://lensasia.tw/wp-content/uploads/2026/03/Olens_Realish_Gray_Monthly_m2-600x749.webp" class="food-img">
             <div class="food-info">
@@ -81,9 +100,12 @@
                 <p>高級感設計，讓眼神與眾不同。</p>
             </div>
         </article>
-
     </div>
 </div>
+
+<footer>
+    <p>&copy; 2026 Premium Lens Collection. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
