@@ -1,0 +1,254 @@
+/* 全域設定 */
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa; /* 淺灰色背景 */
+    color: #333;
+}
+
+/* 頂部導覽列按鈕 */
+.nav-bar {
+    background-color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto; /* 手機版水平滑動 */
+    white-space: nowrap; /* 不換行 */
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #ddd;
+}
+
+.nav-active {
+    background-color: #007bff; /* 主粉藍色 */
+    color: #fff;
+}
+
+/* 主內容區 */
+.main-content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* 品牌卡片共通設定 */
+.brand-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 卡片頭部 (Logo, 名稱, 簡介) */
+.card-header {
+    text-align: center;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.brand-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.brand-name {
+    font-size: 24px;
+    margin: 0;
+}
+
+.brand-intro {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* 卡片身體 (模特戴照, 規格分析) */
+.card-body {
+    display: flex;
+    gap: 20px;
+}
+
+/* 模特戴照區塊 */
+.model-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.model-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.model-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+.color-tag {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 10px;
+    margin-right: 2px;
+}
+
+.lens-name {
+    font-size: 10px;
+    display: block;
+    max-width: 100px;
+}
+
+/* 分類標籤顏色 */
+.color-hazel { background-color: #d1b100; }
+.color-gray { background-color: #7a7a7a; }
+.color-olive { background-color: #7b8e62; }
+.color-pale-brown { background-color: #d8c3a5; }
+.color-sheer-sable { background-color: #8e7e6f; }
+
+/* 規格列表與分析區塊 */
+.info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.specs-list {
+    background-color: #fdfdfe;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.spec-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.spec-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.spec-label {
+    width: 60px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.spec-value {
+    flex: 1;
+    font-size: 12px;
+}
+
+.spec-stars {
+    color: #f7b731; /* 亮黃色 */
+}
+
+.analysis-box {
+    background-color: #fefdfb;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.analysis-box h2 {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.analysis-box p {
+    font-size: 12px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.analysis-list {
+    font-size: 12px;
+    margin: 10px 0 0 15px;
+    padding: 0;
+    list-style-type: disc;
+}
+
+.analysis-list li {
+    margin-bottom: 5px;
+}
+
+/* 品牌卡片特定色系設定 (範例) */
+.olens-card { border-left: 5px solid #007bff; }
+.revia-card { border-left: 5px solid #20c997; }
+
+/* 響應式排版 (手機版) */
+@media screen and (max-width: 768px) {
+    /* 卡片體由並排改為上下堆疊 */
+    .card-body {
+        flex-direction: column;
+    }
+
+    /* 模特區圖片堆疊調整 */
+    .model-section {
+        flex-wrap: wrap;
+    }
+
+    .model-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* 規格與分析區堆疊調整 */
+    .info-section {
+        flex: 1;
+    }
+
+    /* 頂部按鈕改為水平可滑動 */
+    .nav-container {
+        justify-content: flex-start;
+        padding-bottom: 5px;
+    }
+
+    .nav-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
