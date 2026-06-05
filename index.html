@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Contact Lenses Collection</title>
     <style>
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; background-color: #fdfaf7; color: #444; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; background-color: #fdfaf7; color: #444; line-height: 1.6; }
         header { padding: 40px; text-align: center; }
+        .logo-img { max-width: 200px; height: auto; margin-bottom: 20px; }
         .container { max-width: 1000px; margin: auto; padding: 20px; }
-        .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 50px; }
-        .model-img { width: 100%; border-radius: 10px; object-fit: cover; }
+        .hero-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 50px; }
+        .model-img { width: 100%; border-radius: 10px; object-fit: cover; aspect-ratio: 4/3; }
+        .core-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 50px; }
+        .core-img { width: 100%; border-radius: 10px; }
         .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
-        .project-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .project-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); }
         .project-card img { width: 100%; border-radius: 5px; }
         footer { text-align: center; padding: 50px; font-size: 0.9em; color: #888; }
     </style>
@@ -19,6 +23,8 @@
 <body>
 
 <header>
+    <!-- 已修正：加入 Logo -->
+    <img src="logo.png" alt="Brand Logo" class="logo-img">
     <h1>Our Exclusive Collection</h1>
 </header>
 
@@ -33,17 +39,16 @@
 
     <!-- 核心展示區 -->
     <section>
-        <h2>The Quality Focus</h2>
-        <div style="display: flex; gap: 20px;">
-            <img src="venus-brown-box.png" style="width: 48%; border-radius: 10px;">
-            <img src="crystal-brown-pattern.png" style="width: 48%; border-radius: 10px;">
+        <h2 style="text-align: center; margin-bottom: 30px;">The Quality Focus</h2>
+        <div class="core-grid">
+            <img src="venus-brown-box.png" class="core-img" alt="Product Box">
+            <img src="crystal-brown-pattern.png" class="core-img" alt="Pattern Detail">
         </div>
     </section>
 
     <!-- 產品清單 -->
-    <h2 style="margin-top: 50px;">Available Series</h2>
+    <h2 style="margin-top: 50px; text-align: center;">Available Series</h2>
     <div class="product-grid">
-        <!-- 自動化生成 7 個產品卡片 -->
         <div class="project-card"><img src="project-1.png" alt="Product"></div>
         <div class="project-card"><img src="project-2.png" alt="Product"></div>
         <div class="project-card"><img src="project-3.png" alt="Product"></div>
@@ -55,7 +60,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2026 Premium Lens Collection. Designed with passion.</p>
+    <p>&copy; 2026 Premium Lens Collection. All Rights Reserved.</p>
 </footer>
 
 </body>
